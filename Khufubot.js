@@ -325,7 +325,7 @@ const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid:
 const ftoko = {
 key: {
 fromMe: false,
-participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "966502948769@s.whatsapp.net" } : {})
 },
 message: {
 "productMessage": {
@@ -392,7 +392,7 @@ const fvideo = {
 key: { 
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? 
-{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+{ remoteJid: "966502948769@g.us" } : {}) 
 },
 message: { 
 "videoMessage": { 
@@ -413,7 +413,7 @@ const fgclink = {
 },
 "message": {
 "groupInviteMessage": {
-"groupJid": "916909137213-1616169743@g.us",
+"groupJid": "966502948769@g.us",
 "inviteCode": `${global.ownername}`,
 "groupName": `${global.botname}`, 
 "caption":`${global.watermark}`, 
@@ -426,7 +426,7 @@ const fgif = {
 key: { 
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? 
-{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+{ remoteJid: "966502948769@g.us" } : {}) 
 },
 message: { 
  "videoMessage": { 
@@ -444,7 +444,7 @@ const ftextt = {
 key: { 
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? 
-{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+{ remoteJid: "966502948769@g.us" } : {}) 
 },
 message: { 
 "extendedTextMessage": {
@@ -459,7 +459,7 @@ const fvn = {
 key: { 
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? 
-{ remoteJid: "916909137213-1613049930@g.us" } : {}) 
+{ remoteJid: "966502948769@g.us" } : {}) 
 },
 message: { 
 "audioMessage": {
@@ -630,17 +630,17 @@ khufuBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n
 //anti bad words by khufu
 if (antiToxic)
 if (bad.includes(messagesD)) {
-tos = ['يملحد','يكافر','استغفر ربك','هتروحو من ربنا فين ي معرصين','كافرررررررررررر']
+tos = ['','استغفر ربك','']
 sin =  tos[Math.floor(Math.random() * (tos.length))]
 reply(sin)
 if (m.text) {
-bvl = `\`\`\`「 عيب بق 」\`\`\`\n\n`
+bvl = `\`\`\`「 عيب  」\`\`\`\n\n`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await khufuBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-khufuBotInc.sendMessage(from, {text:`\`\`\`「 استغفر الله 」\`\`\`\n\n@${kice.split("@")[0]} خد بان`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
+khufuBotInc.sendMessage(from, {text:`\`\`\`「 استغفر الله 」\`\`\`\n\n@${kice.split("@")[0]} خد حظر`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})}
 }
 //antilink youtube video by khufu
 if (AntiLinkYoutubeVid)
@@ -744,7 +744,7 @@ if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await khufuBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-khufuBotInc.sendMessage(from, {text:`\`\`\`「 لينك؟؟؟؟ 」\`\`\`\n\n@${kice.split("@")[0]} خد بان`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+khufuBotInc.sendMessage(from, {text:`\`\`\`「 رابط؟؟؟؟ 」\`\`\`\n\n@${kice.split("@")[0]} خد حظر`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 
@@ -972,7 +972,7 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-${isWin ? `@${winner.split('@')[0]} فاز!` : isTie ? `اتقفلت هععع اجين 😜❤` : `دورك ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
+${isWin ? `@${winner.split('@')[0]} فاز!` : isTie ? `اتقفلت 😜❤` : `دورك ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
 
@@ -1096,7 +1096,7 @@ const latensie = speed() - timestampe
                 const menulist = `┌─❖
 │「 hi😡 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  انت مبسوط معانا? 😄
+┌┤✑  انت مبسوط? 😄
 │└────────────┈ ⳹
 │
 └─「 معلومات عن بوت😜 」       
@@ -1614,7 +1614,7 @@ Type *surrender* to surrender and admit defeat`
             state: 'WAITING'
             }
             if (text) room.name = text
-            reply('استني الخصم 😡' + (text ? ` Type The Command Below ${prefix}${command} ${text}` : ''))
+            reply('استن الخصم 😡' + (text ? ` Type The Command Below ${prefix}${command} ${text}` : ''))
             this.game[room.id] = room
             }
             }
@@ -2050,30 +2050,15 @@ case 'dare': case 'حكم':
                    if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
               const dare =[
-    "غني ف نص بار اغنيه ركبني مرجيحه😂❤",
-    "روح قول ل كراش كسمك و ابعت اسكرين 🤓",
-    "ابعت بوسه ل اكتر حد بتحبو ف بار 🌚❤",
-    "صور نفسك ونت بتشقلب علي الارض 🤓❤",
-    "اعمل منشن ع حد بتكرهو ف روم 😈❤",
-    "ابعت بوسه ل وحده ف روم 🙂❤",
-    "غني اغنيه حزينه متقلش عن دقيقه 😜❤",
-    "روح قول لل اكس نفسي نرجع و ارمي اسكرين 😡❤",
-	"اعمل صوت مره بتتناك ف روم 🙂❤",
-    "افتح ريك و روح قول ل اي حد ف بيت متيجي امزه 😉❤",
-    "روح قول لل اكس احلقي شنبك 🌚❤",
-    "قول شعر ل شخص ال بتلعب معا 😍💗!",
-    "اكتب عندك ف بايو اسم شخص بتحبو 🌚❤",
-    "اكتب كلمه جدو و حط صوره ال هتجيلك بروفايل 😂❤",
-    "قول نكته ف ريك بس من غير بضان 🙂❤",
-    "اعمل منشن ع حد متعرفهوش ف بار وقول شرموط/ه 😜❤",
-    "ابعت صوره ليك ونت اهطل فيها 🌚❤.",
-    "صور تفسك ونت بتشرب ميا ب ملح 🙄❤",
-    "صور نفسك ونت بترقص وبتغني بصوت عالي 😂❤",
-    "نزل استوري قول انا اتخزوقت 🙂❤",
-    "رن علي ابن عمك/ ابن خالك/ ابن خالتك/ وقولو امك بتخوني مع ابوك وبعت تسجيل 🤓❤!",
-    "روح عند ابوك قولي انت طااق وتكون بتسجل ريك 😂❤",
-    "روح قول ل امك بت سبتني 🙂❤",
-     "روح ل ابوك قولو انا عايز 10 تلاف جنيه اروح ساحل 😜❤"
+    "قول انا غبي😂❤",
+    "قول انا قح*** 🤓",
+    "على ز*ي🌚❤",
+    "عد لين 10 🤓❤",
+    "صور اي شي قدامك😈❤",
+    "روح عل مي🙂❤",
+    "سو فيوس وانت تصارخخ😜❤",
+    "قول ل اقرب واحد جنبك احبك😡❤",
+
 ]
               const khufudare = dare[Math.floor(Math.random() * dare.length)]
               buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
@@ -2084,31 +2069,7 @@ case 'dare': case 'حكم':
        if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
               const truth =[
-    "ضربت عشره انهردا 😂❤",
-    "اسم اكس اي ياض 🤓❤",
-    "اتخزوقت كام مره",
-    "عندك كام سنه يطفل ",
-    "اسم كراش اي",
-    "ال بتلعب معا لعبه بتكرهو 🌚",
-    "ال بتلعبو مع بعض لعبه بتحبو بعض 😜❤",
-    "فين اقرب صديق ليك دلوقتي", 
-    "مين ساب تاني انت ولا هيا 🤓",
-    "قاعد فين دلوقتي",
-    "اكتر حاجه بتكرها ف انسان",
-    "بتكراش ع مدرسه 🥵❤", 
-    "كام مره وقعت قلم/مسطره/ اي حاجه عشان تشوف رجل مدرسه 🤓❤", 
-    "اتبعبصت كام مره من صحابك ياض😂", 
-    "اكتر 2 غالين عندك", 
-    "كام مره صحابك نصبو عليك ونصبو عليك ف اي 🌚", 
-    "اغرب هديه جاتلك اي هيا",
-    "اي سبب ال خلاك تطفش من بيت 🤓", 
-    "هربت كام مره من مدرسه 😡",
-    "كام مره ابوك زنقكك ضرب 😂",
-    "مين ال يشتمك و مدرتش علي ❤",
-    "خت فلوس درس قبل كد ?",
-    "جبت حاجه وتنصب عليك فيها",
-    "لو هتخش سينما مع حد هتخش مع مين",
-    "لو ابوك طلق امك هتروح مع مين"
+  
 ]
               const khufutruth = truth[Math.floor(Math.random() * truth.length)]
               buffer = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
@@ -2166,7 +2127,7 @@ if (isBanChat) return reply(mess.banChat)
           reply(`Exif Has Been Successfully Changed to\n\n${themeemoji} Packname : ${global.packname}\n${themeemoji} Author : ${global.author}`)
             }
             break
-	case 'kick': case 'بان': {
+	case 'kick': case 'حظر': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!m.isGroup) return replay(`${mess.group}`)
@@ -2176,7 +2137,7 @@ if (isBanChat) return reply(mess.banChat)
 		await khufuBotInc.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'add': case 'هاتو': {
+	case 'add': case 'أضافة': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!m.isGroup) return replay(`${mess.group}`)
@@ -2196,7 +2157,7 @@ if (isBanChat) return reply(mess.banChat)
 		await khufuBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'demote': case 'نزلو': {
+	case 'demote': case 'ازالة اشراف': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!m.isGroup) return replay(`${mess.group}`)
@@ -2222,7 +2183,7 @@ if (isBanChat) return reply(mess.banChat)
 		await khufuBotInc.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	    case 'setname': case 'اسمروم': case 'setsubject': {
+	    case 'setname': case 'اسم القروب': case 'setsubject': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
@@ -2232,7 +2193,7 @@ if (isBanChat) return reply(mess.banChat)
                 await khufuBotInc.groupUpdateSubject(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
             }
             break
-          case 'setdesc': case 'وصفالروم': {
+          case 'setdesc': case 'وصف القروب': {
           	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
@@ -2478,7 +2439,7 @@ if (isBanChat) return reply(mess.banChat)
             reply('Successfully Deleted The Vote Session In This Group')
 	    }
             break
-               case 'group': case 'جروب': {
+               case 'group': case 'قروب': {
                	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
@@ -2804,7 +2765,7 @@ replay('Success in turning off twitter antilink in this group')
   }
   }
   break
-              case 'antilinkall': case 'لينكات': {
+              case 'antilinkall': case 'حظر الروابط': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
@@ -2820,7 +2781,7 @@ var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-khufuBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️تحذير⚠️ 」\`\`\`\n\nاي حد هيرمي لينك غير الادمن هياخد بان`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+khufuBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️تحذير⚠️ 」\`\`\`\n\nاي حد يرسل رابط غير المشرف بياخذ حظر`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
 if (!AntiLinkAll) return replay('مقفوله اصلا')
 let off = ntilinkall.indexOf(from)
@@ -2897,7 +2858,7 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (antiToxic) return replay('هيا اصلا متفعله')
+if (antiToxic) return replay('هي اصلا متفعله')
 nttoxic.push(from)
 replay('اتفعلت')
 var groupe = await khufuBotInc.groupMetadata(from)
@@ -2906,9 +2867,9 @@ var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-khufuBotInc.sendMessage(from, {text: `\`\`\`「 تحذير 」\`\`\`\n\nNاي حد هيشتم هياخد بان غير ادمن!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+khufuBotInc.sendMessage(from, {text: `\`\`\`「 تحذير 」\`\`\`\n\nNاي حد ب يسب بياخذ حظر!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!antiToxic) return replay('هيا اصلا مقفوله')
+if (!antiToxic) return replay('هي اصلا مقفوله')
 let off = nttoxic.indexOf(from)
 nttoxic.splice(off, 1)
 replay('اتقفلت')
@@ -3104,17 +3065,17 @@ for (let i of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'لاشي 🍓',
 url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'روم البوت❤',
+displayText: 'سكربت البوت❤',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'سرعه البوت ❤',
+displayText: 'بينق البوت ❤',
 id: 'ping'
 }
 }, {
@@ -3145,17 +3106,17 @@ for (let yoi of anu) {
 await sleep(1500)
 let btn = [{
 urlButton: {
-displayText: 'YouTube 🍓',
+displayText: 'لاشي 🍓',
 url: `${global.websitex}`
 }
 }, {
 urlButton: {
-displayText: 'روم البوت 😜',
+displayText: 'سكربت البوت 😜',
 url: `${global.botscript}`
 }
 }, {
 quickReplyButton: {
-displayText: 'سرعه البوت 🌚',
+displayText: 'بينق البوت 🌚',
 id: 'ping'
 }
 }, {
@@ -3181,13 +3142,13 @@ if (isBanChat) return reply(mess.banChat)
 if (!isCreator) return replay(mess.owner)
                 if (!/video/.test(mime) && !/image/.test(mime) && !/audio/.test(mime)) return reply(`*Send/Reply Video/Audio/Image You Want to Broadcast With Caption* ${prefix + command}`)
                 let anu = await store.chats.all().map(v => v.id)
-                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./KhufuMedia/theme/cheemspic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "966502948769@g.us"}, "message": {orderMessage: {itemCount: 999999999,status: 200, thumbnail: fs.readFileSync('./KhufuMedia/theme/cheemspic.jpg'), surface: 200, message: `${ownername}'s Broadcast`, orderTitle: `${botname}`, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 reply(`*Send Broadcast To* ${anu.length} *Group Chat, Time ${anu.length * 1.5} secs*`)
                 for (let i of anu) {
                     await sleep(1500)
                     let butoon = [{
                                 urlButton: {
-                                displayText: 'YouTube 🍓',
+                                displayText: 'لاشي 🍓',
 url: `${global.websitex}`
                                 }
                             }, {
@@ -3405,12 +3366,12 @@ let media = await quoted.download()
 let encmedia = await khufuBotInc.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(encmedia)
 } else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return reply('ميعديش 10 ثواني!')
+if ((quoted.msg || quoted).seconds > 11) return reply(' يعد 10 ثواني!')
 let media = await quoted.download()
 let encmedia = await khufuBotInc.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(encmedia)
 } else {
-reply(`اعمل ريب علي صوره / فديو و اكتب s`)
+reply(`سو رد على صوره / فديو و اكتب s`)
 }
 }
 break
@@ -3429,12 +3390,12 @@ let media = await quoted.download()
 let encmedia = await khufuBotInc.sendImageAsSticker(m.chat, media, m, { packname: pcknm, author: global.atnm })
 await fs.unlinkSync(encmedia)
 } else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return reply('ميعديش عشر ثواني!')
+if ((quoted.msg || quoted).seconds > 11) return reply(' يعد عشر ثواني!')
 let media = await quoted.download()
 let encmedia = await khufuBotInc.sendVideoAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
 await fs.unlinkSync(encmedia)
 } else {
-reply(`اعمل ريب ع صوره /فديو ميعديش 10 ثواني`)
+reply(`سو رد ع صوره /فديو  يعد 10 ثواني`)
 }
 }
 break
@@ -8647,16 +8608,16 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-teks = `*「 حجات مهمه 🌚❤ 」*\n\nلو عايز تضيف حد ف روم اكتب (هاتو) وعمل ريب ع رساله او اكتب رقمو او اعمل @  
-عايز تدي لحد بان اكتب (بان) وعمل ريب او حط رقمو او @ نفس كلام  
- عايز تمنع لينكات ف بار اكتب (لينكات) ودوس فعل و اي حد هيرمي لينك هياخد بان علطول 
-عايز تعمل منشن لكل اعضاء روم اكتب (تاج) هيعمل منشن لكل ال ف روم 
-لو عايز تعمل منشن خفي اكتب (خفي) هيبعت رساله بتعمل منشن لكل بس م ظهره 
-لو عايز لينك روم اكتب (لينك) هيبعتلك لينك روم 
-ملحوظه: طبعا لازم بوت يكون ادمن عشان يقدر يعمل كل ده❤ 
-عايز ترفع حد ادمن ف روم اكتب (مشرف) وعمل ريب علي رساله او @ 
-عايز تنزل حد من الادمن اكتب (نزلو) نفس كلام ال فوق بق 😂 
-( اعدادات جروب) تمام ال اوامر ال فيها مسافه انا بكتبها ب مسافه لاكن لما تيجي تبعت امر زي اعدادات جروب اكتبو من غير مسافه زي (اعداداتجروب) بس كد لو ف حاجه وقفت معاك اكتب (owner) وخش كلمني ❤`
+teks = `*「 حجات مهمه 🌚❤ 」*\n\nلو تبي تضيف احد ف القروب اكتب (أضافة) وسو رد ع رساله او اكتب رقمه او سو @  
+لو تبي تعطي  احد حظر اكتب (حظر) وسو رد او حط رقمه او سو @ نفس كلام  
+ لو تبي تمنع الروابط ف القروب اكتب (حظر الروابط) واضغط فعل و اي احد بيرسل رابط بياخذ حظر علطول 
+لو تبي تسوي منشن لكل اعضاء القروب اكتب (تاج) بيسوي منشن لكل ال ف القروب 
+لو تبي تعمل منشن خفي اكتب (خفي) بيرسل رساله بتسوي منشن لكل بس م ظهره 
+لو تبي رابط القروب اكتب (رابط) بيرسل لك رابط القروب 
+ملحوظه: طبعا لازم البوت يكون ادمن عشان يقدر يسوي كل ذا❤ 
+او تبي تحط احد مشرف ف قروب اكتب (مشرف) وسو رد على رساله او @ 
+تبي تشيل احد من الاشراف اكتب (ازالة اشراف) نفس الكلام ال فوق 😂 
+( اعدادات قروب) تمام ال اوامر ال فيها مسافه انا بكتبها ب مسافه لاكن لما تيجي ترسل امر زي اعدادات القروب اكتبه من غير مسافه زي (اعدادت الجروب) بس كذا لو ف حاجه ماعرفتها اكتب (owner) وخش كلمني ❤`
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'اوامر🌺'}, type: 1}
 ]
@@ -8685,7 +8646,7 @@ if (isBanChat) return reply(mess.banChat)
 khufuBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
 	                let btn = [{
                                 urlButton: {
-                                    displayText: 'YouTube 🍒',
+                                    displayText: 'لاشي 🍒',
                                     url: `${websitex}`
                                 }
                             }, {
@@ -8722,8 +8683,8 @@ khufuBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key
                         /////////khufuBotInc.send5ButMsg(m.chat, menulist, global.botname, btn)
                         } else if (setbot.templateDocument) {
                         let buttonmenu = [
-        	{ urlButton: { displayText: `قناتي 🍒`, url : `${websitex}` } },
-            { urlButton: { displayText: `قناه اوزكس 🌚`, url: `${botscript}` } },
+        	{ urlButton: { displayText: `لاشي 🍒`, url : `${websitex}` } },
+            { urlButton: { displayText: ` سكربت البوت 🌚`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `اوامر 😜`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `القائمه❤`, id: 'command'} },
             { quickReplyButton: { displayText: `المالك🤣`, id: 'owner'} }
@@ -8743,121 +8704,125 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "hello whore😂❤",
+															"title": "hello whore😂❤",
 								"rows": [
 									{
-										"title": "حجات تانيه😜❤",
+										"title": "اشياء تانيه😜❤",
 										"description": " .",
 										"rowId": `${prefix}شتايم`
 									}
 								]
 							},
 							{
-								"title": "bot khufu ❤️",
+								"title": "bot yaser ❤️",
 								"rows": [
 									{
 										"title": "اوامر كلها×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}allmenu`
 									},
 									{
 										"title": "اوامر المالك ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "اوامر جروب ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"title": "اوامر قروب ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "اوامر لوجو ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"title": "اوامر لوقو ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}makermenu`
 									},
 									{
 										"title": "اوامر اغاني ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}soundmenu`
 									},
 									{
 										"title": "اوامر تحمل ×፝֟͜×️",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
 										"title": "اوامر ال استيكر×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}stickermenu`
 									},
 									{
 										"title": "اوامر البحث ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
 										"title": "اعدادات اوامر×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}toolmenu`
 									},
 									{
 										"title": "اوامر صور ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}randomimagemenu`
 									},
 									{
 										"title": "تعديل علي صور ×፝֟͜×️",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}imageeffectmenu`
 									},
 										{
 											"title": "اوامر ال انمي ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}animemenu`
 										},
 										{
-											"title": "اوامر ايمو ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+											"title": "اوامر ايموت ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}emotemenu`
 										},
 										{
-										"title": "نمي استيكر ×፝֟͜×️",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"title": "انمي استيكر ×፝֟͜×️",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}animestickermenu`
 									     },
 									{
-										"title": "شكس انمي ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
-										"rowId": `${prefix}nsfwmenu`
+										
+										
 									     },
 										{
-											"title": "حجات مسليه ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+											"title": "اشياء مسليه ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
+										"rowId": `${prefix}funmenu`
+										},
+										{
+											"title": "اشياء مسليه ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}funmenu`
 										},
 										{
 										"title": "العاب ×፝֟͜×",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}indomenu`
 									},
 										{
 											"title": "اوامر صوت و استيكر ×፝֟͜×️",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "اوامر جروب بل عربي ×፝֟͜×️",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+											"title": "اوامر قروب بل عربي ×፝֟͜×️",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}group11`
 										}
 								]
 							},
 							{
-								"title": "كلم حد متعرفهوش ×፝֟͜×",
+								"title": "كلم احد ماتعرفه ×፝֟͜×",
 								"rows": [
 									{
 										"title": "كلم شخص غريب",
-										"description": " ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×",
+										"description":  "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}anonymousmenu`
 									}
 								]
@@ -8867,7 +8832,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"rows": [
 									{
 										"title": "شكرا ل ️",
-										"description": "ᴹᴿ᭄𝐾𝐻𝑈𝐹𝑈 ×፝֟͜×!",
+										"description": "ᴹᴿ᭄YASER ×፝֟͜×",
 										"rowId": `${prefix}tqtt`
 									}
 								]
@@ -9602,25 +9567,25 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」
 ╠ ${prefix}donate
 ╠ ${prefix}request
 ╠ ${prefix}report [bug] 
-╔═══════✪「 اوامر جروب 」	               الشرح 👇👇
-╠${prefix}اعدادات جروب              
-╠${prefix}لينك                        (    هيجبلك لينك الروم)
-╠${prefix}لينكات                          ( اي حد هيرمي لينك هياخد بان)
-╠${prefix}صوره الروم [image]             (هيغير صوره روم)
-╠${prefix}اسم الروم [text]                 (هيغير اسم الروم)
-╠${prefix}وصف الروم [text]              ( هيغير وصف الروم)
-╠${prefix}جروب                         (  هيقفل روم او يفتحو )
-╠${prefix}رستر                             (هيرستر لينك روم)
-╠${prefix}هاتو [user]                       (هيضيف شخص)
-╠${prefix}بان [reply/tag]                  ( هيديلو بان)
-╠${prefix}خفي [text]                      ( هيعمل منشن م باين)
-╠${prefix}منشن [text]                      (هيعمل منشن للكل)
-╠${prefix}مشرف [reply/tag]                (هيرفع شخص ادمن)
-╠${prefix}نزلو [reply/tag]                 ( هينزلو من الادمن) 
+╔═══════✪「 اوامر قروب 」	               الشرح 👇👇
+╠${prefix}اعدادات قروب              
+╠${prefix}رابط                        (    يجيب لك رابط القروب)
+╠${prefix}روابط                          ( اي احد يرسل رابط بياخذ حظر)
+╠${prefix}صوره القروب [image]             (يغير صوره القروب)
+╠${prefix}اسم القروب [text]                 (يغير اسم القروب)
+╠${prefix}وصف القروب [text]              ( يغير وصف القروب)
+╠${prefix}قروب                         (  بيقفل القروب او يفتحه )
+╠${prefix}رستر                             (يرستر رابط القروب)
+╠${prefix}أضافة [user]                       (يضيف شخص)
+╠${prefix}بان [reply/tag]                  ( هيديلو با)
+╠${prefix}خفي [text]                      ( يسوي منشن م يبان)
+╠${prefix}منشن [text]                      (يسوي منشن للكل)
+╠${prefix}مشرف [reply/tag]                (يرفع شخص ادمن)
+╠${prefix}شيل الاشراف [reply/tag]                 ( يشيل الاشراف من مشرف 
  
 {
-تمام بص ي غالي ونت بتكتب اي امر من دول متحط مسافه يعني اعدادات جروب هتكتبها  اعداداتجروب اكتبها عادي بس منغير مسافه بس كد ❤ 
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+ ❤ 
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
@@ -9645,7 +9610,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」
 ╠ ${prefix}bcloc [text]
 ╠ ${prefix}setppbot [image]
 ╠ ${prefix}setexif
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر 💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر 💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9691,7 +9656,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 GROUP 」
 ╠${prefix}upvote
 ╠${prefix}checkvote
 ╠${prefix}delvote
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر 💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر 💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'rpgmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9709,7 +9674,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 RPG 」
 ╠${prefix}profile
 ╠${prefix}inventory
 ╠${prefix}leaderboard
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'makermenu':
 	   if (isBan) return reply(mess.ban)
@@ -9823,7 +9788,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 MAKER 」
 ╠ ${prefix}halloween
 ╠ ${prefix}watercolor
 ╠ ${prefix}classic
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'downloadmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9850,7 +9815,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 DOWNLOAD 」
 ╠${prefix}gitclone [repo link]
 ╠${prefix}soundcloud [url]
 ╠${prefix}zippyshare [url]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'searchmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9882,7 +9847,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 SEARCH 」
 ╠${prefix}wattpad [query]
 ╠ ${prefix}mcserver [ip|port]
 ╠${prefix}drakor [query]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'convertmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9917,7 +9882,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 CONVERT 」
 ╠${prefix}robot [reply aud]
 ╠${prefix}slow [reply aud]
 ╠${prefix}squirrel [reply aud]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'randomimagemenu':
 	   if (isBan) return reply(mess.ban)
@@ -9936,7 +9901,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 RANDOM IMG �
 ╠${prefix}wallcode
 ╠${prefix}animewall [query]
 ╠${prefix}animewall2 [query]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 
 case 'emotemenu':
@@ -9956,7 +9921,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 EMOTE 」
 ╠${prefix}googleemoji
 ╠${prefix}pediaemoji
 ╠${prefix}microsoftemoji
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'imageeffectmenu':
 	   if (isBan) return reply(mess.ban)
@@ -9977,7 +9942,7 @@ await khufuBotInc.send5ButImg(from, `╔═════✪「 IMG EFFECT 」
 ╠${prefix}beautifuleffect
 ╠${prefix}deleteeffect
 ╠${prefix}pixelate
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'animemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10031,7 +9996,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 ANIME 」
 ╠${prefix}megumin2
 ╠${prefix}loli
 ╠${prefix}couplepp
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'stickermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10045,7 +10010,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 STICKER 」
 ╠ ${prefix}ttp
 ╠ ${prefix}doge
 ╠ ${prefix}lovesticker
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'animestickermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10081,7 +10046,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 ANIME STICKE
 ╠${prefix}cringe
 ╠${prefix}neko
 ╠${prefix}gura
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'nsfwmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10113,7 +10078,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 NSFW 」
 ╠${prefix}spank
 ╠${prefix}hneko
 ╠${prefix}nwaifu
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'funmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10184,7 +10149,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 Fun 」
 ╠ ${prefix}playboy
 ╠ ${prefix}fuckgirl
 ╠ ${prefix}playgirl
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'soundmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10352,7 +10317,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 Sound 」
 ╠ ${prefix}sound159
 ╠ ${prefix}sound160
 ╠ ${prefix}sound161
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'gamemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10366,7 +10331,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 GAME 」
 ╠ ${prefix}guess [option]
 ╠ ${prefix}math [mode]
 ╠ ${prefix}suitpvp [tag]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'anonymousmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10377,7 +10342,7 @@ await khufuBotInc.send5ButImg(from, `╔═══✪「 ANONYMOUS 」
 ╠${prefix}start
 ╠${prefix}next
 ╠${prefix}leave
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'toolmenu':
 	   if (isBan) return reply(mess.ban)
@@ -10387,7 +10352,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 TOOL 」
 ╠ ${prefix}translate [text]
 ╠ ${prefix}fliptext [text]
 ╠ ${prefix}toletter [number]
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'databasemenu':
 	   if (isBan) return reply(mess.ban)
@@ -10402,7 +10367,7 @@ await khufuBotInc.send5ButImg(from, `╔═══✪「 DATABASE 」
 ╠ ${prefix}listmsg
 ╠ ${prefix}getmsg
 ╠ ${prefix}delmsg
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'indomenu':
 	   if (isBan) return reply(mess.ban)
@@ -10433,7 +10398,7 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 INDO 」
 ╠${prefix}covidindo
 ╠${prefix}earthquake
 ╠${prefix}tvschedule
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'group11':
 	   if (isBan) return reply(mess.ban)
@@ -10456,8 +10421,8 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 جروب 」
 ╠${prefix}نزلو [reply/tag]                 ( هينزلو من الادمن) 
  
 {
-تمام بص ي غالي ونت بتكتب اي امر من دول متحط مسافه يعني اعدادات جروب هتكتبها  اعداداتجروب اكتبها عادي بس منغير مسافه بس كد ❤ 
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+ ❤ 
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'شتايم':
 	   if (isBan) return reply(mess.ban)
@@ -10483,36 +10448,16 @@ await khufuBotInc.send5ButImg(from, `╔═══════✪「 شتايم �
 ╠ ${prefix}مين انت يعني
 ╠ ${prefix}مين انت
 ╠ ${prefix}هنيكك
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "قناتي 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": " 😚♥","url": `${websitex}`}},{"urlButton": {"displayText": "ozx 💗","url": `${botscript}`}},{"quickReplyButton": {"displayText": "معلومات اكتر💗","id": 'donate'}},{"quickReplyButton": {"displayText": "المالك💗","id": 'owner'}}] )
 break
 case 'tqtt': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`شكرا لي استخدامك البوت  نتمني ان يكون البوت نال اعجابك ونتمني ان تشاركنا رايك حول البوت ونرجو الاشتراك في قنواتنا علي اليوتيوب والتواصل معانا في حاله حدوث اي مشاكل .  
+reply(`شكرا لي استخدامك البوت  .  
 
  
 
-رقم اوزكس للتواصل واتس اب :  
 
- https://wa.me/+201027844506
-
-رقم خوفو للتواصل واتس اب :  
-
- https://wa.me/+201121968769
-
-قناه اوزكس يوتيوب :  
-
- https://youtube.com/channel/UCB3Z3phhszGj8FBdaJmIdJQ
-
-قناه خوفو يوتيوب :  
-
- https://youtube.com/channel/UCaWoQPfLiIY4dDp3WeWm7oA
-
-جروب لتجربه البوت و حل اي مشكله تظهر معاك في البوت ومساعدتك علي فهم البوت :  
-
-https://chat.whatsapp.com/F4dGv48uhUc0pQoZb58jiB 
-
- نتمني ان تكون اشتركت في قناتنا وانضممت لنا في جروب الواتس اب وشكرا💗`)
 break
             default:
                 if (budy.startsWith('=>')) {
